@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<title>CrossTech - Entry Test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Roboto Mono', monospace;}
+.course {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("home.png");
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#course" class="w3-bar-item w3-button">COURSE</a>
+    <a href="#menu" class="w3-bar-item w3-button">TIMELINE</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    
+    <div class="w3-display-bottomleft w3-padding">
+      <span class="w3-tag w3-xlarge">Open from 10/02 to 28/02/2020</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <p><a href="#course" class="w3-button w3-xxlarge w3-black">Let choose your course!</a></p>
+    </div>
+</header>
+
+<!-- Course Container -->
+     <div class="w3-container w3-white w3-padding-48 w3-xxlarge" id="course">
+        <div class="w3-content">
+          <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">CHOOSE YOUR COURSE!</h1>   
+            <div class="w3-container">
+              <ul class="w3-ul w3-card-4">
+                <li class="w3-bar">
+                  <a href="https://forms.gle/cecyZ6yrgDFXURZa9" target="_blank">
+                      <div class="w3-bar-item w3-hover-grey">QC Manual</div>
+                    </a>
+                </li>
+            
+                <li class="w3-bar">
+                  <a href="https://forms.gle/qzQWNTiL3ZSqSqBR8" target="_blank">
+                      <div class="w3-bar-item w3-hover-grey">FrontEnd(HTML, CSS, JS)</div>
+                    </a>
+                </li>
+            
+                <li class="w3-bar">
+                  <a href="https://forms.gle/JuJ8q1KsRyFYZGme8" target="_blank">
+                      <div class="w3-bar-item w3-hover-grey">ReactJS</div>
+                    </a>
+                    <span class="w3-right w3-tag w3-red w3-round">NEW!</span>
+                </li>
+      
+                <li class="w3-bar">
+                  <a href="https://forms.gle/WQHqS6pW3temmvQKA" target="_blank">
+                      <div class="w3-bar-item w3-hover-grey">BackEnd(Ruby on Rails)</div>
+                    </a>
+                    <span class="w3-right w3-tag w3-red w3-round">NEW!</span>
+                </li>
+      
+                <li class="w3-bar">
+                  <a href="https://forms.gle/kwGpPSpUeA1qmE118" target="_blank">
+                      <div class="w3-bar-item w3-hover-grey">AI-Machine Learning</div>
+                    </a>
+                </li>
+      
+                <li class="w3-bar">
+                  <a href="https://forms.gle/P6WbDgfENw4bwpGC7" target="_blank">
+                      <div class="w3-bar-item w3-hover-grey">Android(Kotlin)</div>
+                    </a>
+                </li>
+      
+                <li class="w3-bar">
+                  <a href="https://forms.gle/Dn2hP1K3XUReRdAHA" target="_blank"> 
+                      <div class="w3-bar-item w3-hover-grey">iOS(Swift)</div>
+                    </a>
+                    <span class="w3-right w3-tag w3-red w3-round">HOT!</span>
+                </li>
+              </ul>
+            </div>         
+          
+          </div>
+          <br>
+      
+        </div>
+      </div>
+
+<!-- Timeline Container -->
+<div class="w3-container w3-padding-48 w3-red w3-grayscale w3-xlarge" id="menu">
+    <div class="w3-content">
+  
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">COURSE TIMELINE</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey" >
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Manual');" id="idManual">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-white">Manual</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'FrontEnd');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-white">FrontEnd</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'ReactJS');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-white">ReactJS</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'BackEnd');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-white">BackEnd</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'AIML');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-white">AI-ML</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Android');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-white">Android</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'iOS');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-white">iOS</div>
+          </a>
+        </div>
+    
+        <div id="Manual" class="w3-container menu w3-padding-16 w3-white" style="font-size: large">
+          <h1><b>Session 1</b></h1>
+          <p class="w3-text-grey">Software development models</p>
+          <p class="w3-text-grey">What is Testing?</p>
+          <p class="w3-text-grey">7 Software Testing Principles</p>
+          <p class="w3-text-grey">Fundamental Test Process</p>
+          <hr>
+          
+          <h1><b>Session 2</b></h1>
+          <p class="w3-text-grey">Test level</p>
+          <p class="w3-text-grey">Function & Non-Function Testing</p>
+          <hr>
+
+          <h1><b>Session 3</b></h1>
+          <p class="w3-text-grey">Blackbox & Whitebox Testing</p>
+          <p class="w3-text-grey">Web & Mobile Application Testing</p>
+          <hr>
+
+          <h1><b>Session 4</b></h1>
+          <p class="w3-text-grey">Testcase Template</p>
+          <p class="w3-text-grey">Test Plan Template</p>
+          <p class="w3-text-grey">Defect/ Bug life Cycle & Bug Report</p>
+          <hr>
+
+          <h1><b>Session 5</b></h1>
+          <p class="w3-text-grey">Database Testing</p>
+          <hr>
+
+          <h1><b>Session 6</b></h1>
+          <p class="w3-text-grey">API Testing</p>
+          <hr>
+          <h1><b>Session 7</b></h1>
+          <p class="w3-text-grey">Report</p>
+          <hr>
+        </div>
+    
+        <div id="FrontEnd" class="w3-container menu w3-padding-16 w3-white" style="font-size: large">
+          <h1><b>Session 1</b></h1>
+          <p class="w3-text-grey">Basic Knowledge about Internet and Web</p>
+          <hr>
+          
+          <h1><b>Session 2</b></h1>
+          <p class="w3-text-grey">Layout of Website</p>
+          <p class="w3-text-grey">Choose project and group</p>
+          <hr>
+
+          <h1><b>Session 3</b></h1>
+          <p class="w3-text-grey">Basic knowledge about git / gitlab</p>
+          <hr>
+
+          <h1><b>Session 4</b></h1>
+          <p class="w3-text-grey">Basic definition about HTML and CSS</p>
+          <p class="w3-text-grey">HTML, CSS syntax</p>
+          <p class="w3-text-grey">Website layout</p>
+          <hr>
+
+          <h1><b>Session 5</b></h1>
+          <p class="w3-text-grey">Get familiar with HTML / CSS</p>
+          <p class="w3-text-grey">Develop header of sample project</p>
+          <p class="w3-text-grey">Develop slide section of sample project</p>
+          <hr>
+
+          <h1><b>Session 6</b></h1>
+          <p class="w3-text-grey">Develop the main content of sample project</p>
+          <p class="w3-text-grey">Develop footer of sample project</p>
+          <p class="w3-text-grey">Other HTML tags</p>
+          <p class="w3-text-grey">Responsive</p>
+          <hr>
+          <h1><b>Session 7</b></h1>
+          <p class="w3-text-grey">Report project progress</p>
+          <p class="w3-text-grey">Responsive (cont)</p>
+          <hr>
+          <h1><b>Session 8</b></h1>
+          <p class="w3-text-grey">Bootstrap</p>
+          <p class="w3-text-grey">Basic knowledge about javascript: syntax, calculation, logic, fork structure, loop structure, function</p>
+          <hr>
+          <h1><b>Session 9</b></h1>
+          <p class="w3-text-grey">Complex data types in javascript: array, string, date, json</p>
+          <p class="w3-text-grey">Handle UI with jQuery</p>
+          <hr>
+          <h1><b>Session 10</b></h1>
+          <p class="w3-text-grey">Handle UI with jQuery (cont)</p>
+          <hr>
+          <h1><b>Session 11</b></h1>
+          <p class="w3-text-grey">Report project progress</p>
+          <p class="w3-text-grey">AJAX</p>
+          <hr>
+          <h1><b>Session 12</b></h1>
+          <p class="w3-text-grey">AJAX (cont)</p>
+          <p class="w3-text-grey">Introduce some javascript library</p>
+          <hr>
+          <h1><b>Session 13</b></h1>
+          <p class="w3-text-grey">LocalStorage / SessionStorage / Cookie</p>
+          <p class="w3-text-grey">Draft project report</p>
+          <hr>
+          <h1><b>Session 14</b></h1>
+          <p class="w3-text-grey">All groups report about their project </p>
+          <hr>
+        </div>
+        
+        <div id="ReactJS" class="w3-container menu w3-padding-16 w3-white" style="font-size: large">
+          <h1><b>Session 1</b></h1>
+          <p class="w3-text-grey">Set up enviroment </p>
+          <p class="w3-text-grey">JS</p>
+          <p class="w3-text-grey">React Overview</p>
+          <p class="w3-text-grey">Init Project & Git</p>
+          <hr>
+          
+          <h1><b>Session 2</b></h1>
+          <p class="w3-text-grey">Component </p>
+          <p class="w3-text-grey">Styles component</p>
+          <p class="w3-text-grey">Extensions</p>
+          <p class="w3-text-grey">Using create react app</p>
+          <p class="w3-text-grey">Props & State</p>
+          <p class="w3-text-grey">Childrend - Parent Component</p>
+          <hr>
+
+          <h1><b>Session 3</b></h1>
+          <p class="w3-text-grey">Lifecycle</p>
+          <p class="w3-text-grey">Handling Event</p>
+          <p class="w3-text-grey">Conditional Rendering</p>
+          <p class="w3-text-grey">Lists and Keys</p>
+          <hr>
+
+          <h1><b>Session 4</b></h1>
+          <p class="w3-text-grey">Forms & Formik package</p>
+          <p class="w3-text-grey">React-router</p>
+          <p class="w3-text-grey">Assume samples</p>
+          <hr>
+
+          <h1><b>Session 5 - 6 - 7</b></h1>
+          <p class="w3-text-grey">Redux</p>
+          <p class="w3-text-grey">Statefull-Stateless</p>
+          <p class="w3-text-grey">Redux thunk</p>
+          <hr>
+
+          <h1><b>Session 8</b></h1>
+          <p class="w3-text-grey">Authentication </p>
+          <hr>
+          <h1><b>Session 9</b></h1>
+          <p class="w3-text-grey">Deploy server</p>
+          <p class="w3-text-grey">Testing</p>
+          <hr>
+          <h1><b>Session 10</b></h1>
+          <p class="w3-text-grey">Introduce React Advance</p>
+          <hr>
+          <h1><b>Session 11</b></h1>
+          <p class="w3-text-grey">Report</p>
+        </div>
+        
+        <div id="BackEnd" class="w3-container menu w3-padding-16 w3-white" style="font-size: large">
+          <h1><b>Session 1 to 6</b></h1>
+          <p class="w3-text-grey">HTML & CSS</p>
+          <p class="w3-text-grey">Javascript & Jquery</p>
+          <p class="w3-text-grey">Ruby</p>
+          <hr>
+          
+          <h1><b>Session 7 to 16</b></h1>
+          <p class="w3-text-grey">Ruby on Rails overview</p>
+          <p class="w3-text-grey">M- Model on Rails</p>
+          <p class="w3-text-grey">V - View on Rails</p>
+          <p class="w3-text-grey">C - Controller on Rails</p>
+          <p class="w3-text-grey">Other component</p>
+          <p class="w3-text-grey">Rails Advantages (optional)</p>
+          <hr>
+
+          <h1><b>Session 17 to 20</b></h1>
+          <p class="w3-text-grey">Homework & Report</p>
+        </div>
+        
+        <div id="AIML" class="w3-container menu w3-padding-16 w3-white" style="font-size: large">
+          <h1><b>Session 1</b></h1>
+          <p class="w3-text-grey">Introduce to Machine Learning</p>
+          <hr>
+          
+          <h1><b>Session 2</b></h1>
+          <p class="w3-text-grey">Your first model: Fashion MNIST</p>
+          <hr>
+
+          <h1><b>Session 3</b></h1>
+          <p class="w3-text-grey">Introduce to CNNs</p>
+          <hr>
+
+          <h1><b>Session 4</b></h1>
+          <p class="w3-text-grey">Going futher with CNNs</p>
+          <hr>
+
+          <h1><b>Session 5</b></h1>
+          <p class="w3-text-grey">Overfitting problem</p>
+          <hr>
+
+          <h1><b>Session 6</b></h1>
+          <p class="w3-text-grey">Tranfer Learning</p>
+          <hr>
+
+          <h1><b>Session 7</b></h1>
+          <p class="w3-text-grey">The Workflow of Machine Learning</p>
+          <hr>
+
+          <h1><b>Session 8</b></h1>
+          <p class="w3-text-grey">Summary</p>
+          <hr>
+        </div>
+        
+        <div id="Android" class="w3-container menu w3-padding-16 w3-white" style="font-size: large">
+          <h1><b>Session 1</b></h1>
+          <p class="w3-text-grey">Review OOP + Application Components + Hello world Example</p>
+          <hr>
+          
+          <h1><b>Session 2</b></h1>
+          <p class="w3-text-grey">Tools + Resources</p>
+          <hr>
+
+          <h1><b>Session 3</b></h1>
+          <p class="w3-text-grey">Activities + Services Components</p>
+          <hr>
+
+          <h1><b>Session 4</b></h1>
+          <p class="w3-text-grey">Broadcasts Receivers + Content Providers</p>
+          <hr>
+
+          <h1><b>Session 5</b></h1>
+          <p class="w3-text-grey">Fragments</p>
+          <hr>
+
+          <h1><b>Session 6</b></h1>
+          <p class="w3-text-grey">Intents & Filters</p>
+          <hr>
+
+          <h1><b>Session 7 to 14</b></h1>
+          <p class="w3-text-grey">UI [Layouts, Controls] + Event Handling + Data Binding</p>
+          <hr>
+
+          <h1><b>Session 15</b></h1>
+          <p class="w3-text-grey">Styles & Themes</p>
+          <hr>
+
+          <h1><b>Session 16</b></h1>
+          <p class="w3-text-grey">Asynchronous in Android</p>
+          <hr>
+
+          <h1><b>Session 17</b></h1>
+          <p class="w3-text-grey">Networking</p>
+          <hr>
+
+          <h1><b>Session 18</b></h1>
+          <p class="w3-text-grey">Architecture MVVM, MVP, MVPI + Common third-party libraries</p>
+          <hr>
+
+          <h1><b>Session 19</b></h1>
+          <p class="w3-text-grey">Make a application like Grab</p>
+          <hr>
+
+          <h1><b>Session 20</b></h1>
+          <p class="w3-text-grey">Pushing to PlayStore</p>
+          <hr>
+
+          <h1><b>Session 21</b></h1>
+          <p class="w3-text-grey">Report</p>
+          <hr>
+        </div>
+        
+        <div id="iOS" class="w3-container menu w3-padding-16 w3-white" style="font-size: large">
+          <h1><b>Session 1</b></h1>
+          <p class="w3-text-grey">XCode and fundamental of Swift</p>
+          <hr>
+          
+          <h1><b>Session 2</b></h1>
+          <p class="w3-text-grey">ViewController and Control ViewController</p>
+          <hr>
+
+          <h1><b>Session 3</b></h1>
+          <p class="w3-text-grey">View and Auto-Layout</p>
+          <hr>
+
+          <h1><b>Session 4</b></h1>
+          <p class="w3-text-grey">UITableview </p>
+          <hr>
+
+          <h1><b>Session 5</b></h1>
+          <p class="w3-text-grey">UICollectionView</p>
+          <hr>
+
+          <h1><b>Session 6</b></h1>
+          <p class="w3-text-grey">JSON and NSRequest</p>
+          <hr>
+          <h1><b>Session 7</b></h1>
+          <p class="w3-text-grey">Local Database</p>
+          <hr>
+          <h1><b>Session 8</b></h1>
+          <p class="w3-text-grey">NSThread and control MultiThread</p>
+          <hr>
+          <h1><b>Session 9</b></h1>
+          <p class="w3-text-grey">Practice and experience</p>
+          <hr>
+          <h1><b>Session 10</b></h1>
+          <p class="w3-text-grey">Report</p>
+          <hr>
+        </div>
+        
+        <br>
+    
+      </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container w3-padding-48 w3-white w3-grayscale-min w3-xlarge" id="contact">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact info</h1>
+    <p>Hi guys, thank you for your interest in CrossTech.</p>
+    <p><span class="w3-tag">FYI!</span> Please contact us at (+84)36 506 0016 (Ms.Thom) for inquiries and support information about courses.</p>
+    <p> Facebook: https://facebook.com/crosstechteam </p>
+    <p> Email: tuyensinh.crosstech@gmail.com</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-red w3-padding-48 w3-grayscale w3-large">
+  <p>Powered by <a href="https://crosstechhub.com/" title="crosstechhub.com" target="_blank" class="w3-white">CrossTech</a> | <a href="https://www.facebook.com/crosstechteam" title="crosstechteam" target="_blank" class="w3-white">Facebook</a> </p>
+</footer>
+
+<script>
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-red";
+  }
+  document.getElementById("idManual").click();
+  </script>
+
+</body>
+</html>
